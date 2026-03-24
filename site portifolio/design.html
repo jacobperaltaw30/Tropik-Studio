@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tropik design</title>
+  <link rel="stylesheet" href="css/estetica.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+body{margin: 0;
+      font-family: Marcellus;
+      background: #111;
+      color: white;}
+
+/* galeria */
+.galeria{display: flex;
+          gap: 20px;
+          padding: 0px 20px;
+          justify-content: center;
+          margin-top: 40 !important;}
+
+.galeria img{height: 250px;
+              width: auto;
+              object-fit: cover;
+              cursor: pointer;
+              border-radius: 10px;
+              transition: 0.3s;}
+
+.galeria img:hover{transform: scale(1.05);}
+
+/* vizualizacao */
+.visualizacao{display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.9);
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;}
+
+.visualizacao:target{display: flex;}
+
+/* conteudo real */
+.conteudo{display: flex;
+            gap: 30px;
+            align-items: center;}
+
+.conteudo img{width: 600px;}
+
+.texto{max-width: 600px;
+        display: grid;}
+
+.texto p{font-size: 20px;}
+
+.texto h2{margin: 0px 0px 0px 0px;}
+
+.artista a{color: #a6b966;}
+
+.texto.d{font-size: 19px;
+          text-align: center;
+          max-width: 1000px;
+    margin: auto;
+    display: block;
+    height: 130px;
+    padding: 0px 0px;}
+
+.logo-container {text-align: center;
+                  margin-bottom: 0px;}
+
+/* botao fechar */
+.fechar {position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 30px;
+          color: white;
+          text-decoration: none;}
+
+/* estetica galeria de passar o mouse em cima */
+.item-galeria {position: relative;
+                display: inline-block;}
+
+.item-galeria img {height: 250px;
+                    width: auto;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    transition: 0.3s;}
+
+/* escurecer imagem */
+.item-galeria:hover img {filter: brightness(0.6);
+                          transform: scale(1.05);}
+
+/* overlay (texto) */
+.overlay {position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          border: 1px solid white;
+          padding: 10px 20px;
+          font-size: 14px;
+          text-transform: none;
+          opacity: 0;
+          transition: 0.3s;
+          pointer-events: none;}
+
+/* aparecer no hover */
+.item-galeria:hover .overlay {opacity: 1;}
+
+
+
+</style>
+  
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo 1.png" alt="Logo">
+      </a>
+    </div>
+
+    <ul class="menu">
+     <li class="dropdown">
+       <a href="#">Portifolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="design.html">Design Gráfico</a></li>
+          <li><a href="edicao.html">Edição de vídeo</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <div class="logo-container">
+      <span class="logo-text">PROJETOS NA ÁREA DE DESIGN GRÁFICO</span>
+  </div>
+
+  <p class="texto d">Trabalho com um estilo artístico e autoral, principalmente com tons de verde e paletas mais fechadas e monocromáticas, pra manter uma identidade visual consistente. Também o uso de texto como parte do próprio visual, mantendo sempre um equilíbrio imagem e composição pra deixar o resultado interessante e bem organizado. No geral, meus projetos procuram unir estética e significado de um jeito simples, mas marcante.</p>
+
+
+  <div class="galeria">
+    <a href="#img1" class="item-galeria">
+      <img src="imagens/cartaz perfume.jpg" alt="cartaz publicitário">
+      <span class="overlay">Ver Projeto</span>
+    </a>
+    <a href="#img2" class="item-galeria">
+      <img src="imagens/cartaz brasil.jpg" alt="cartaz artístico">
+      <span class="overlay">Ver Projeto</span>
+    </a>
+    <a href="#img3" class="item-galeria">
+      <img src="imagens/capa revista.jpg" alt="capa de revista">
+      <span class="overlay">Ver Projeto</span>
+    </a>
+    <a href="#img4" class="item-galeria">
+      <img src="imagens/cartaz mouthwashing.jpg" alt="cartaz artístico">
+      <span class="overlay">Ver Projeto</span>
+    </a>
+  </div>
+
+  <div id="img1" class="visualizacao">
+    <a href="#" class="fechar">×</a>
+
+    <div class="conteudo">
+    <img src="imagens/cartaz perfume.jpg" class="perfume" alt="cartaz publicitário">
+      <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de cartaz publicitário de um produto aleatório</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Illustrator & Photoshop</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Perfume como produto escolhido, paleta de cores baseadas na cor do mesmo, tipografia fina e elegante alinhada à estética, elementos gráficos utilizados para reforçar o conceito e a mensagem do produto e do slogan</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Composição publicitária, tratamento de cor, composição de texto e imagem, e construção de harmonia visual, tento a expressão da mensagem a ser passada</p>
+      </div>
+      </div>
+  </div>
+
+  <div id="img2" class="visualizacao">
+    <a href="#" class="fechar">×</a>
+
+    <div class="conteudo">
+    <img src="imagens/cartaz brasil.jpg" class="perfume" alt="cartaz artístico">
+      <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de cartaz tipográfico artístico</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Projeto autoral, realizado em 2026</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Illustrator</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Cartaz artístico, com temática musical e referências à cultura brasileira desde a escrita nas formas, até os próprios elementos presentes, que reforçam a identidade e o conceito proposto</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Composição de texto e imagem, composição por texto (All Type), modelo colagem digital e composição radial</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img3" class="visualizacao">
+    <a href="#" class="fechar">×</a>
+
+    <div class="conteudo">
+    <img src="imagens/capa revista.jpg" class="perfume" alt="capa de revista">
+      <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de capa para uma revista aleatória</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Projeto autoral, realizado em 2026</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Illustrator & Photoshop</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Bazzar como revista escolhida, seguindo a identidade visual da empresa com a cor verde sendo a principal, tipografia fina e elegante combinando com a estética e objetivo proposto, tratamento na imagem da modelo base</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Tratamento de imagem, composição de layout,composição de texto e imagem, e construção de harmonia visual</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img4" class="visualizacao">
+    <a href="#" class="fechar">×</a>
+
+    <div class="conteudo">
+    <img src="imagens/cartaz mouthwashing.jpg" class="perfume" alt="cartaz artístico">
+      <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de cartaz tipográfico artístico</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Illustrator</p>
+<br>
+        <h2>Conceito:</h2>
+        <p class="artista">Cartaz artístico, inspirado na arte de <a href="https://x.com/KaizerxKing/status/1863541627895099664">KaiserxKing</a>, com temática do jogo Mouthwashing, formado unicamente de textos baseados em uma música do mesmo tema</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Composição de texto e imagem, composição por texto (All Type), padronização tipográfica, textura tipográfica e construção de profundidade</p>
+      </div>
+      </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="imagens/logo 1.png" alt="Logo">
+    </div>
+    <div class="footer-info">
+
+      <div class="info-item">
+        <i class="bi bi-instagram"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-envelope-fill"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-telephone-fill"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-linkedin"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Tropik Studio — Todos os direitos reservados</p>
+    <a href="#">Política de Privacidade</a>
+  </div>
+</footer>
+
+</body>
+</html>

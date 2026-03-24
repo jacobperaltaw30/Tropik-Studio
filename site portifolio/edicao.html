@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>tropik edicao</title>
+  <link rel="stylesheet" href="css/estetica.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+body{margin: 0;
+      font-family: Marcellus;
+      background: #111;
+      color: white;}
+
+/* galeria */
+.galeria{display: flex;
+          gap: 20px;
+          padding: 0px 0px;
+          margin: 0px !important;
+          justify-content: center;}
+
+.galeria video{height: 250px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.3s;
+                object-fit: cover;}
+
+.item-galeria{position: relative;
+              margin-top: 25px;}
+
+.item-galeria:hover video{filter: brightness(0.6);
+                          transform: scale(1.05);}
+
+/* overlay */
+.overlay{position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 1px solid white;
+          padding: 10px 20px;
+          opacity: 0;
+          transition: 0.3s;
+          pointer-events: none;
+          color: white;}
+
+.item-galeria:hover .overlay{opacity: 1;}
+
+/* visualização */
+.visualizacao{display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.9);
+                justify-content: center;
+                align-items: center;}
+
+.visualizacao:target{display: flex;}
+
+/* conteúdo */
+.conteudo{display: flex;
+          gap: 30px;
+          align-items: center;}
+
+.conteudo img{width: 600px;}
+
+.conteudo video{width: 900px;}
+
+/* texto */
+.texto{max-width: 600px;
+        display: grid;}
+
+.texto p{font-size: 20px;}
+
+/* fechar */
+.fechar{position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;}
+
+.texto.d{font-size: 19px;
+          text-align: center;
+          max-width: 1000px;
+    margin: auto;
+    display: block;
+    height: 130px;
+    padding: 0px 0px;}
+
+.logo-text{margin: 0px;
+padding: 0px;}
+</style>
+
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="imagens/logo 1.png" alt="Logo">
+    </a>
+  </div>
+
+    <ul class="menu">
+     <li class="dropdown">
+       <a href="#">Portifolio</a>
+       <ul class="dropdown-menu">
+          <li><a href="design.html">Design Gráfico</a></li>
+          <li><a href="edicao.html">Edição de vídeo</a></li>
+       </ul>
+      </li>
+      <li class="dropdown"><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+<br>
+
+  <h2 class="logo-text">PROJETOS NA ÁREA DE EDIÇÃO DE VÍDEO</h2>
+
+<br>
+
+  <p class="texto d">Trabalho com edição de vídeo a partir de uma abordagem artística e autoral, com foco principalmente em videoclipes experimentais. Minhas edições são dinâmicas, com cortes estratégicos, mas sem o uso de muitos efeitos, estanto um pouco fora da identidade visual, priorizo apenas ajustes de cor e movimento. Trabalhos com paletas mais fechadas e monocromáticas, mantendo uma identidade visual consistente ao longo de todo o vídeo.</p>
+
+<div class="galeria">
+
+  <a href="#img1" class="item-galeria">
+    <video src="videos/video 1.mp4" muted></video>
+    <span class="overlay">Ver Projeto</span>
+  </a>
+
+  <a href="#img2" class="item-galeria">
+    <video src="videos/video 2.mp4" muted></video>
+    <span class="overlay">Ver Projeto</span>
+  </a>
+
+  <a href="#img3" class="item-galeria">
+    <video src="videos/video 3.mp4" muted></video>
+    <span class="overlay">Ver Projeto</span>
+  </a>
+
+</div>
+<div class="galeria">
+  <a href="#img4" class="item-galeria">
+    <video src="videos/video 4.mp4" muted></video>
+    <span class="overlay">Ver Projeto</span>
+  </a>
+
+  <a href="#img5" class="item-galeria">
+    <video src="videos/video 5.mp4" muted></video>
+    <span class="overlay">Ver Projeto</span>
+  </a>
+
+  <a href="#img6" class="item-galeria">
+    <video src="videos/video 6.mp4" muted></video>
+    <span class="overlay">Ver Projeto</span>
+  </a>
+
+</div>
+
+<!-- VISUALIZAÇÃO COM IMAGEM -->
+
+<div id="img1" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 1.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img2" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 2.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img3" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 3.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img4" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 4.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img5" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 5.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img6" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 6.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<div id="img7" class="visualizacao">
+  <a href="#" class="fechar">×</a>
+    <div class="conteudo">
+      <video src="videos/video 7.mp4" controls></video>
+        <div class="texto">
+        <h2>Projeto:</h2>
+        <p>Criação de videoclipe</p>
+<br>
+        <h2>Contexto:</h2>
+        <p>Realizado em 2025, resultado de um projeto proposto por curso técnico de multimidia</p>
+<br>
+        <h2>Ferramentas utilizadas:</h2>
+        <p>Premiere</p>
+<br>
+        <h2>Conceito:</h2>
+        <p>Como objetivo, escolher um música, juntamente ao um pacote de vídeos e, com base nisso, criar um novo videoclipe, música "Bad Romance" de Lady Gaga escolhida, escolha de uma estética de "balada", com tons de roxo</p>
+<br>
+        <h2>Técnicas:</h2>
+        <p>Edição em corte, composição vídeo + música, manipulação de cor, manipulação de velocidade e tamanho de arquivo</p>
+      </div>
+      </div>
+  </div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="imagens/logo 1.png" alt="Logo">
+    </div>
+    <div class="footer-info">
+
+      <div class="info-item">
+        <i class="bi bi-instagram"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-envelope-fill"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-telephone-fill"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-linkedin"></i>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Tropik Studio — Todos os direitos reservados</p>
+    <a href="#">Política de Privacidade</a>
+  </div>
+</footer>
+
+
+</body>
+</html>

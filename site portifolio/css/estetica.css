@@ -1,0 +1,321 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+body{background-color: black;
+      font-family: Marcellus;
+      overflow-y: scroll;}
+
+ul {list-style: none;
+     padding: 0;
+     margin: 0;}
+
+.navbar{display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 40px;
+          background-color: #4F4F4F;}
+
+.logo img{height: 50px;}
+
+.menu{display: flex;
+        list-style: none;
+        gap: 30px;}
+
+.menu li{position: relative;}
+
+.menu > li > a:hover {background-color: #2a2f26;
+                        color: white;}
+
+
+.menu a:hover{color: #a6b966;}
+
+.dropdown-menu{display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #a6b966;
+                padding: 10px 0;
+                min-width: 180px;}
+
+.dropdown-menu li{padding: 0px;}
+
+.dropdown-menu a:hover {background-color: white;
+                          color: black;}
+
+.dropdown:hover .dropdown-menu{display: block;}
+
+p{color: white;
+  font-size: 22px;}
+h1, h2, h3{color: #a6b966}
+
+.menu a{color: white;
+          text-decoration: none;
+          font-size: 3px;
+          padding: 8px 12px;}
+
+.menu a:hover {background-color: #2a2f26;
+                color: white;}
+
+.dropdown-menu a {display: block;
+                    padding: 12px 15px;
+                    color: black;}
+
+.menu > li > a:hover {background-color: #2a2f26;
+                        color: white;}
+
+.dropdown-menu a:hover {background-color: #8a9373;
+                         color: black;}
+
+.logo-container { display: flex;
+                  align-items: center;
+                   justify-content: center;
+                  gap: 10px;}
+
+.logo-img {height: 70px;}
+
+/* sobre empresa */
+.logo-text{color: #c1b456;
+            font-size: 40px;
+            font-family: 'Poppins' !important;
+            font-weight: 700;
+            text-align: center;}
+
+.logo-text.dois{color: #c1b456;
+            font-size: 20px;
+            font-family: 'Poppins' !important;
+            font-weight: 700;
+            text-align: center;}
+
+html {scrollbar-gutter: stable;}
+
+.textoo{margin-left: 8%;
+          margin-right: 8%;
+          text-align: center;}
+
+.container {display: flex;
+              justify-content: space-between;
+              padding: 20px;
+              margin-left: 8%;
+              margin-right: 8%;}
+
+.icone{width: 90px;
+        margin-bottom: 10px;}
+
+.titulo{color: #A9A9A9;}
+
+footer {background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;}
+
+.footer{background-color: #1f1f1f;
+         color: white;
+         padding: 40px 20px;
+         margin-top: 60px;}
+
+.footer-container{display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;}
+
+.footer-logo img{height: 23px;}
+
+.footer-info{display: flex;
+              gap: 30px;
+              flex-wrap: wrap;}
+
+/* icones footer */
+.info-item{text-align: center;
+            width: auto;}
+
+.info-item i{font-size: 17px !important;}
+
+
+/* footer informacoes */
+.footer-bottom{margin-top: 30px;
+               border-top: 1px solid #444;
+               padding-top: 15px;
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: wrap;
+               font-size: 15px;}
+
+.footer-bottom a{color: #768466;
+                  text-decoration: none;}
+
+.footer-bottom a:hover{text-decoration: underline;
+                        color: #768466;}
+
+.footer-bottom p{font-size: 100%;}
+
+.info-item i{font-size: 130%;
+              color: #768466;}
+
+.dropdown-menu a{font-size: 20px;}
+
+/* experiencia em */
+.bloco p{font-size: 19px;}
+
+.nossa.empresa{font-size: 19px;
+                margin-left: 40px;}
+
+.sobre {display: flex;
+          align-items: center;
+          gap: 40px;
+          margin-left: 8%;
+          margin-right: 8%;}
+
+.imagem.lateral {flex: 1;}
+
+.imagem.lateral img {width: 600px;
+                      display: block;
+                      margin-right: 40px;}
+
+.menu {display: flex;
+        gap: 30px;}
+
+/* portifolio/contato */
+.menu > li > a{font-size: 17px;}
+
+/* logo menu */
+.logo img{height: 30px;}
+
+.texto {height: 400px;
+         overflow: hidden;
+         display: flex;
+         align-items: center;}
+
+/* design/edicao */
+.dropdown-menu li a{font-size: 17px;}
+
+section, article, div {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+
+  .navbar{
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .menu{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .dropdown-menu{
+    position: static;
+    width: 100%;
+  }
+
+
+  p{
+    font-size: 16px;
+  }
+
+  .logo-text{
+    font-size: 26px;
+  }
+
+  video{
+    width: 100% !important;
+  }
+
+
+  .sobre{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem.lateral img{
+    width: 100%;
+    margin: 0;
+  }
+
+  .nossa.empresa{
+    margin: 0;
+  }
+
+
+  .container{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .bloco{
+    width: 100%;
+  }
+
+  .galeria{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria video{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria img{
+    width: 90%;
+    height: auto;
+  }
+
+
+  .conteudo{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .conteudo img,
+  .conteudo video{
+    width: 100%;
+  }
+
+  .texto{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .galeria video{
+    width: 90%;
+    height: auto;
+  }
+
+
+  .contato{
+    padding: 10px;
+  }
+
+  input, textarea{
+    font-size: 14px;
+  }
+
+
+  .footer-container{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.texto.d{height: auto !important;}
+}
